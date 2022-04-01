@@ -1,0 +1,141 @@
+.container {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*----------Navigation tab start----------*/
+.nav-tab{
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #F7F6FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.logo{
+    position: relative;
+    width: 68px;
+    height: 34px;
+    left: 16px;
+    top: 44px;
+}
+
+.line{
+    position: absolute;
+    width: 62.24px;
+    height: 0px;
+    left: 18px;
+    top: 110.03px;/
+    border: 2px solid #C4C4C4;
+}
+
+.nav-button{
+    position: relative;
+    width: 89px;
+    height: 57px;
+    left: 11px;
+    top: 112px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.nav-button-img{
+    position: absolute;
+    left: 42px;
+    right: 138px;
+    top: 16px;
+    bottom: 16px;    
+    transform: translate(-50%);
+    filter: invert(88%) sepia(0%) saturate(0%) hue-rotate(165deg) brightness(92%) contrast(88%);
+}
+
+.nav-button-text{
+    position: absolute;
+    width: 62px;
+    height: 18px;
+    left: 87px;
+    top: 19px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C4C4C4;
+}
+
+.nav-button > .nav-button-text{
+    visibility: hidden;    
+}
+
+/*-----.nav-button:hover-----*/
+.nav-button:hover{
+    background: #FFFFFF;    
+}
+
+.nav-button:hover > .nav-button-img{
+    filter: invert(21%) sepia(34%) saturate(4386%) hue-rotate(176deg) brightness(93%) contrast(98%);
+}
+
+.nav-button:hover > .nav-button-text{
+    color: #02577A;
+}
+
+/*-----.nav-tab:hover-----*/
+.nav-tab:hover{
+    width: 206px;
+}
+
+.nav-tab:hover > .logo{
+    left: 69px;
+    top: 44px;
+}
+
+.nav-tab:hover > .line{
+    width: 128.22px;
+    left: 39px;
+}
+
+.nav-tab:hover > .nav-button{
+    width: 195px;
+}
+
+.nav-tab:hover > .nav-button > .nav-button-text{    
+    visibility: visible;
+}
+/*----------Navigation tab end----------*/
+
+/*----------Footer style start----------*/
+.footer{
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    text-align: center; 
+}
+
+.footer-line{
+    position: absolute;
+    width: 346.01px;
+    left: 50%;    
+    bottom: 11px;
+    transform: translate(-50%, -50%);
+    margin-bottom: 11px;
+    border: 1px solid #02577A;
+}
+
+.footer-text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #02577A;
+}
+/*----------Footer style end----------*/
