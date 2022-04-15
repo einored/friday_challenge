@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/layout.css">
 </head>
 
-<body>
+<body onload="startTime(); day()">
     <main class="container">
         <nav class="nav-tab">
             <img src="./assets/navigation/bit-logo.png" alt="BIT logo" class="logo">
@@ -31,12 +31,11 @@
                 <img src="./assets/navigation/games-icon.svg" alt="Games logo" class="nav-button-img">
                 <h1 class="nav-button-text">Games</h1>
             </div>
-        </nav>
-        
+        </nav>        
         <section>
             <div class="date-time">
-                <p class="time">10:23</p>
-                <p class="date">Pirmadienis, Sausio 3, 2022</p>
+                <p class="time" id="time"></p>
+                <p class="date" id="date"></p>
             </div>
             <div class="greeting">
                 <p>Good morning,</p>
@@ -53,6 +52,88 @@
             <h1 class="footer-text">© Baltic Institute of Technology</h1>
         </footer>
     </main>
+
+    <script>
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          if(m < 10)
+            document.getElementById('time').innerHTML =  h + ":0" + m ;
+        else
+            document.getElementById('time').innerHTML =  h + ":" + m ;
+          setTimeout(startTime, 1000);
+        }
+        function day(){
+            const today = new Date();
+            let day = today.getDay();
+            let month = today.getMonth();
+            let monthDay = today.getDate();
+            let year = today.getFullYear();
+            switch(day){
+                case 1:
+                    day = 'Pirmadienis';
+                    break;
+                case 2:
+                    day = 'Antradienis';
+                    break;
+                case 3:
+                    day = 'Trečiadienis';
+                    break;
+                case 4:
+                    day = 'Ketvirtadienis';
+                    break;
+                case 5:
+                    day = 'Penktadienis';
+                    break;
+                case 6:
+                    day = 'Šeštadienis';
+                    break;
+                case 7:
+                    day = 'Sekmadienis';
+                    break;
+            }
+            switch(month){
+                case 1:
+                    month = 'Sausio';
+                    break;
+                case 2:
+                    month = 'Vasario';
+                    break;
+                case 3:
+                    month = 'Kovo';
+                    break;
+                case 4:
+                    month = 'Balandžio';
+                    break;
+                case 5:
+                    month = 'Gegužės';
+                    break;
+                case 6:
+                    month = 'Birželio';
+                    break;
+                case 7:
+                    month = 'Liepos';
+                    break;
+                case 8:
+                    month = 'Rugpjūčio';
+                    break;
+                case 9:
+                    month = 'Rugsėjo';
+                    break;
+                case 10:
+                    month = 'Spalio';
+                    break;
+                case 11:
+                    month = 'Lapkričio';
+                    break;
+                case 12:
+                    month = 'Gruodžio';
+                    break;
+            }
+            document.getElementById('date').innerHTML =  day + ", " + month + " " + monthDay + ", " + year;
+        }
+    </script>
 </body>
 
 </html>
