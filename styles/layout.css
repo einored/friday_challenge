@@ -139,3 +139,128 @@
     color: #02577A;
 }
 /*----------Footer style end----------*/
+
+/*----------section style start----------*/
+/* .container:hover > .container-section {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+} */
+
+.date-time{
+    background-color: #FFF;
+    position: absolute;
+    right: 67px;
+    top: 56px;
+    width: 516px;
+    height: 147px;
+    border-radius: 25px;
+    font-weight: medium;
+    font-family: Montserrat;
+}
+
+.time{
+    color: #02577A;
+    position: absolute;
+    left: 96px;
+    top: 22px;
+    font-size: 36px;    
+}
+
+.date{
+    position: absolute;
+    left: 96px;
+    bottom: 46px;
+    font-size: 24px;
+}
+
+.greeting{
+    position: absolute;
+    left: 206px;
+    top: 89px;
+    width: 341px;
+    height: 80px;
+    font-size: 36px;
+    font-size: normal;
+}
+
+.home-img{
+    position: absolute;
+    left: 102px;
+    top: 226px;
+    width: 91.3%;
+    /* height: auto;  */
+    /* width: 1345px;  */
+    /* overflow: visible;  */
+    /* display: block; */
+    /* position: relative; */
+    /* overflow: hidden;  */
+}
+
+.quote{
+    position: absolute;
+    top: 707px;
+    left: 50%;
+    width: 898px;
+    height: 121px;
+    transform: translate(-50%);
+    border: 2px solid #02577A;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.quote > p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+}
+
+/* ---------------------------------------- */
+@media (max-width: 700px){
+.date-time{
+    right: 32px;
+    top: 44px;
+    width: 419px;
+    height: 147px;
+}
+
+.time{
+    left: 20px;
+}
+
+.date{
+    left: 20px;
+}
+
+.greeting{
+    left: 141px;
+    top: 224px;
+}
+
+.home-img{
+    top: 317px;
+}
+
+.quote{
+    top: 626px;
+    left: 50%;
+    width: 433px;
+    height: 121px;
+    transform: translate(-50%);
+}
+
+/* .quote > p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+} */
+}
+/*----------section style end----------*/
