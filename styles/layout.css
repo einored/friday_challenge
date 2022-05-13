@@ -19,6 +19,7 @@
     background: #F7F6FF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
+    z-index: 2;
 }
 
 .logo{
@@ -159,10 +160,6 @@
     overflow: hidden; 
 }
 
-/* .nav-tab:hover.home-img{
-    left: 202px;
-} */
-
 .quote{
     position: absolute;
     top: 707px;
@@ -214,7 +211,6 @@
     .quote{
         top: 626px;
         left: 121px;
-        /* left: 50%; */
         width: 433px;
         height: 121px;
         transform: translate(0);
@@ -225,7 +221,7 @@
 /*----------Footer style start----------*/
 .footer{
     position: absolute;
-    bottom: 4px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 400px;

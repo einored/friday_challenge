@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friday challenge</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/calendar.css">
+</head>
+
+<body>
+    <main class="container">
+        <nav class="nav-tab" onclick="window.location='../index.html'">
+            <img src="../assets/navigation/bit-logo.png" alt="BIT logo" class="logo">
+            <hr class="line"></hr>
+            <div class="nav-button">
+                <img src="../assets/navigation/home-icon.svg" alt="Home logo" class="nav-button-img">
+                <h1 class="nav-button-text">Home</h1>
+            </div>
+            <div class="nav-button" onclick="window.location='../pages/calendar.html'">
+                <img src="../assets/navigation/calendar-icon.svg" alt="Calendar logo" class="nav-button-img">
+                <h1 class="nav-button-text">Calendar</h1>
+            </div>
+            <div class="nav-button">
+                <img src="../assets/navigation/fe-components-icon.svg" alt="FE logo" class="nav-button-img">
+                <h1 class="nav-button-text">FE</h1>
+            </div>
+            <div class="nav-button">
+                <img src="../assets/navigation/games-icon.svg" alt="Games logo" class="nav-button-img">
+                <h1 class="nav-button-text">Games</h1>
+            </div>
+        </nav>        
+        <section>
+            <div class="calendar-task-row">
+                <div class="calendar-task">
+                    <span class="delete-task">...</span>
+                    <h1>SCSS</h1>
+                    <p>Try mixin</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width:50%; background-color: #FC0000;"></div>
+                    </div>
+                </div>
+                <div class="calendar-task">
+                    <span class="delete-task">...</span>
+                    <h1>React</h1>
+                    <p>Lift state up</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width:50%; background-color: #FCE300;"></div>
+                    </div>
+                </div>
+                <div class="calendar-task">
+                    <span class="delete-task">...</span>
+                    <h1>PHP</h1>
+                    <p>Use isset()</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width:50%; background-color: #51FC00;"></div>
+                    </div>
+                </div>      
+                <span class="add-task">+</span>          
+            </div>
+            <div class="calendar">
+                <ul class="curent-month">
+                    <h1>January</h1>
+                </ul>
+                <ul class="weekdays">
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                    <li>Sun</li> 
+                    <hr class="calendar-line"></hr>
+                </ul>
+               
+                <ul class="days">
+                    <li style="color: grey;">27</li>
+                    <li style="color: grey;">28</li>
+                    <li style="color: grey;">29</li>
+                    <li style="color: grey;">30</li>
+                    <li style="color: grey;">31</li>
+
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li><span class="active">14</span></li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                    <li style="color: grey;">1</li>
+                    <li style="color: grey;">2</li>
+                    <li style="color: grey;">3</li>
+                    <li style="color: grey;">4</li>
+                    <li style="color: grey;">5</li>
+                    <li style="color: grey;">6</li>
+                </ul>
+            </div>            
+        </section>
+
+        <footer class="footer">
+            <hr class="footer-line"></hr>
+            <h1 class="footer-text">© Baltic Institute of Technology</h1>
+        </footer>
+    </main>
+
+</body>
+
+</html>
